@@ -31,10 +31,12 @@ public class PriorityRESTController {
     }
     @PostMapping("/create")
     public Priority create(@RequestBody Priority priority){
+       // System.out.println(priority.getId());
         return service.create(priority);
     }
     @PostMapping("/update")
     public Priority update(@RequestBody Priority priority){
+      //  System.out.println(priority.getId());
         return service.update(priority);
     }
 
